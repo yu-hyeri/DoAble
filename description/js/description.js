@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const icon = document.querySelector(".icon-container");
 
-  const images = ["../img/main.png", "../img/calendar.png", "../img/diary.png"];
+  const images = ["../img/main.svg", "../img/cal.svg", "../img/diary.svg"];
   const texts = [
     [
       "간편한 캘린더 어플",
       "목표 세우는 게 막막하다면?",
       "걱정마세요. Doable과 함께라면 뭐든지 할 수 있어요.",
     ],
-    ["캘린더", "일정과 계획이 생겼다면,", "캘린더와 To-do list로 안내할게요."],
+    ["캘린더", "일정과 계획이 생겼다면", "캘린더와 To-do list로 안내할게요."],
     [
       "일기장",
       "오늘 하루는 어땠나요?",
@@ -30,12 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // 초기 상태 (첫 번째 버튼 활성화)
-  updateButtonColor();
+  const imagePC = document.querySelector(".main-img-pc");
+  const imageMobile = document.querySelector(".main-img-mobile");
 
   icon.addEventListener("click", function () {
-    index = (index + 1) % images.length; // 다음 이미지로 넘어감, 마지막이면 처음으로
-    document.querySelector(".main1").src = images[index];
+    index = (index + 1) % images.length;
+
+    if (imagePC) imagePC.src = images[index];
+    if (imageMobile) imageMobile.src = images[index];
+
     document.querySelector(".txt1").textContent = texts[index][0];
     document.querySelector(".txt2").textContent = texts[index][1];
     document.querySelector(".txt3").textContent = texts[index][2];
@@ -48,19 +51,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const slides = [
     {
-      image: "../img/phone_main.png",
+      image: "../img/main.svg",
       txtt1: "간편한 캘린더 어플",
       txtt2: "목표 세우는 게 막막하다면?",
       txtt3: "걱정마세요. Doable이 도와드릴게요.",
     },
     {
-      image: "../img/phone_main2.png",
+      image: "../img/cal.svg",
       txtt1: "새로운 일정 추가",
       txtt2: "목표를 세우는 방법은?",
       txtt3: "Doable에서 함께 찾아보세요.",
     },
     {
-      image: "../img/phone_main3.png",
+      image: "../img/diary.svg",
       txtt1: "더욱 쉬운 일정 관리",
       txtt2: "매일매일 목표 달성하기",
       txtt3: "Doable과 함께라면 가능합니다!",
@@ -72,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function changeSlide(index) {
     // 이미지 변경
-    const imageElement = document.querySelector(".m1");
+    const imageElement = document.querySelector(".main-img-pc");
     imageElement.src = slides[index].image;
 
     // 텍스트 변경
