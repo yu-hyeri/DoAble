@@ -5,6 +5,21 @@
 
 <br>
 
+|프로젝트 기간|팀 인원|내 기여도|
+|---|---|---|
+|2024.12.13 ~ 2024.12.30| 4명 | 40% |
+
+|기획|디자인|개발|                                          
+|---|---|---|
+|서비스 주제 발굴 및 문제 정의|서비스 디자인 가이드 구축|온보딩 & 로그인 화면 구현|
+사용자 페르소나 및 타겟층 분석|온보딩 화면 콘텐츠 구성 및 흐름 설계|카카오 로그인 API 연동|
+사용자 유입 구조 설계|슬라이드 기반 온보딩 UI 기획 및 시각 설계|사용자 입력값(닉네임) → 메인 화면 전달 로직 구현|
+경쟁 서비스(플래닛, Minical 등) 리서치 및 AS-IS 분석|프로필 화면 레이아웃 및 사용자 정보 입력 흐름 설계|프로필 저장 및 상태 전달 로직 구현|
+
+
+
+
+
 
 
 <h2>✨ 프로젝트 개요 </h2>
@@ -16,7 +31,7 @@ Doable은 **일정 관리의 진입장벽을 낮추고**, 최소한의 기능으
 <br>
 
 
-<h2> Tools </h2>
+<h2>⚙️ Tools </h2>
 
 
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
