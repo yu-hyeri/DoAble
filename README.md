@@ -1,9 +1,18 @@
 # Doable 프로젝트 개요 및 문제 정의
 
+
+
 ### ✨ 프로젝트 개요
+
 ---
 Doable은 **일정 관리의 진입장벽을 낮추고**, 최소한의 기능으로 **일상과 감정을 기록할 수 있는 미니멀 캘린더 서비스**입니다.  
 복잡한 기존 캘린더 서비스에 부담을 느끼는 사용자들을 위해, **직관적 UI**와 **간단한 입력 방식**을 중심으로 설계했습니다.
+
+### Tools
+---
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+
 
 
 
